@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import GithubContext from '../../context/github/githubContext'
 
 
-const SearchedItem = ({ searched, clearUsers }) => {
+const SearchedItem = () => {
+
+  const githubContext = useContext(GithubContext);
+
+  const { searched, clearUsers } = githubContext;
+
+
 
   return (
-    searched !== '' && (
+    githubContext.users.length > 0 && (
       <div className="" style={style1}>
         Search results for <span style={useStyle}>{searched}</span>
         <button onClick={clearUsers} className="btn btn-danger text-right">Clear</button>

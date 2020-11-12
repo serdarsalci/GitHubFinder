@@ -343,6 +343,10 @@ table th {
   background: var(--light-color);
 }
 
+.notVisible{
+  opacity: 0.5;
+  background-color: #28a745;
+}
 /* Navbar */
 
 .navbar {
@@ -358,14 +362,15 @@ table th {
 
 .navbar ul {
   display: flex;
-   /* display: block;  */
+  /* display: block;  */
   /* flex-direction: row;  */
 }
 
 .text-right {
-text-align: right;
-float:right;
+  text-align: right;
+  float: right;
 }
+
 .navbar a {
   color: #fff;
   padding: 0.45rem;
