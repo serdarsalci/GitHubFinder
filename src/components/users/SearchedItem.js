@@ -10,7 +10,6 @@ const SearchedItem = () => {
   const { searched, clearUsers } = githubContext;
 
 
-
   return (
     githubContext.users.length > 0 && (
       <div className="" style={style1}>

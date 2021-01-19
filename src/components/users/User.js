@@ -3,7 +3,6 @@ import Spinner from '../layout/Spinner'
 import { Link } from 'react-router-dom'
 import Repos from '../repos/Repos'
 import GithubContext from '../../context/github/githubContext'
-import githubContext from '../../context/github/githubContext'
 
 const User = ({ match }) => {
 
